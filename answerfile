@@ -6,8 +6,9 @@ iface lo inet loopback
 auto eth0
 iface eth0 inet dhcp
     hostname alpine
+    dns-nameservers 8.8.8.8 8.8.4.4
 "
-TIMEZONEOPTS="-z UTC"
+TIMEZONEOPTS="-z Asia/Shanghai"
 PROXYOPTS="none"
 APKREPOSOPTS="http://dl-cdn.alpinelinux.org/alpine/v3.20/main http://dl-cdn.alpinelinux.org/alpine/v3.20/community"
 SSHDOPTS="-c openssh"
