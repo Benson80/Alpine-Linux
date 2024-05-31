@@ -1,5 +1,6 @@
 # Alpine-Linux
 Termux自动安装Alpine Linux
+
 `answerfile` 文件是用于在 Alpine Linux 安装过程中自动配置系统的配置文件。每一行代表安装过程中的一个选项配置，详细解释如下：
 
 1. **KEYMAPOPTS="us us"**
