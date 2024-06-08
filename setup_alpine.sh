@@ -18,7 +18,8 @@ pkg install openssl -y
 mkdir alpine && cd alpine
 
 # 下载Alpine Linux ISO文件
-wget https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-virt-3.20.0-x86_64.iso
+#wget https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-virt-3.20.0-x86_64.iso
+wget https://benson80.eu.org/x86_64/alpine-virt-3.20.0-x86_64.iso
 
 # 创建10G的qcow2镜像文件
 qemu-img create -f qcow2 alpine.img 10G
