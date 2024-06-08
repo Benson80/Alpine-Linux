@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# 更换Termux软件源为清华源
-echo "deb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main" > $PREFIX/etc/apt/sources.list
-echo "deb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable" >> $PREFIX/etc/apt/sources.list
-echo "deb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable" >> $PREFIX/etc/apt/sources.list
-echo "deb https://mirrors.tuna.tsinghua.edu.cn/termux/unstable-packages unstable main" >> $PREFIX/etc/apt/sources.list
-
 # 更新软件包索引并升级已安装的软件包
 pkg update && pkg upgrade -y
 
